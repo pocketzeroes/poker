@@ -5,12 +5,12 @@ void print_cards(const char *name, vector<Card> *cards){
 //	cout<<name;
 	for(vector<Card>::iterator e=cards->begin();e!=cards->end();e++){
 		if(e->getSuit()==Card::Diamonds||e->getSuit()==Card::Hearts)
-			textcolor(BRIGHT,RED,WHITE);
+			textcolor(RESET,RED,HIDDEN);
 		else
-			textcolor(BRIGHT,BLACK,WHITE);
+			textcolor(RESET,BLACK,HIDDEN);
 		cout<<e->getName();
 	}
 	cout<<endl;
-	textcolor(BRIGHT,BLACK,WHITE);
+	textcolor(RESET,BLACK,HIDDEN);
 }
 #endif
